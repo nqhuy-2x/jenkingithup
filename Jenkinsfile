@@ -9,11 +9,13 @@ pipeline {
         stage("Build") {
             steps {
                 echo "Build stage."
+                sh "npm i"
             }
         }
         stage("Test") {
             steps {
                 echo "Test stage."
+                sh "npm start"
             }
         }
         stage("Release") {

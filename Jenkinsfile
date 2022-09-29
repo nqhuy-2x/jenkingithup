@@ -8,14 +8,12 @@ pipeline {
         }
         stage("Build") {
             steps {
-                echo "Build stage."
-                sh "npm i"
+                echo "Build stage."                
             }
         }
         stage("Test") {
             steps {
                 echo "Test stage."
-                sh "npm start"
             }
         }
         stage("Release") {

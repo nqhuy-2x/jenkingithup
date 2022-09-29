@@ -6,7 +6,7 @@ pipeline {
                 git 'https://github.com/nqhuy-2x/jenkingithup.git'
             }
         }
-        stage('Build') { 
+        stage("Build") { 
             steps {
                 sh 'npm i'
             }

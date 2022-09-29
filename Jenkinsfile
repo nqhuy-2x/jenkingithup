@@ -6,13 +6,5 @@ pipeline {
                 git 'https://github.com/nqhuy-2x/jenkingithup.git'
             }
         }
-        stage("Build") { 
-            steps {
-                sh 'npm i'
-            }
-            steps {
-                sh 'npm start'
-            }
-        }
     }
 }
